@@ -11,23 +11,9 @@ set guifont=Monaco:h14
 " map double tap of m to GOTO bookmark, while single m remains set mark
 nmap mm `
 
-" command D brings up your jump list
-map <D-j> :FufJumpList<CR>
-
 " kep bindings to quickly toggle tag bar
 nnoremap <silent> <F3> :TagbarToggle<CR>
 nnoremap ' :TagbarToggle<CR>
-
-" Create a function that enables one to run ack in ex mode for an arbitrary
-" string
-function! AckArg(text)
-  let command = "ack ".expand(a:text)
-  cexpr system(command)
-  cw
-endfunction
-
-" Map the AckArg function to :A 'sometext'
-:command -nargs=1 A call AckArg(<args>)
 
 :command CC :CoffeeCompile
 
