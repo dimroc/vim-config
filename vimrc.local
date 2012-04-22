@@ -9,7 +9,7 @@ set guifont=Monaco:h14
 :set hlsearch " highlight search terms
 
 " map double tap of m to GOTO bookmark, while single m remains set mark
-nmap mm `
+" nmap mm `
 
 " kep bindings to quickly toggle tag bar
 nnoremap <silent> <F3> :TagbarToggle<CR>
@@ -29,3 +29,6 @@ imap <C-S-Space> <C-N>
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 :set nofoldenable
+
+" remap command e to FufBuffer
+map <D-e>       :FufBuffer<CR>
