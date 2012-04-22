@@ -11,6 +11,9 @@ endfunction
 " C family
 autocmd BufWritePre *.m,*.h,*.c,*.mm,*.cpp,*.hpp call StripTrailingWhitespace()
 
+" Highlight objective C files
+autocmd BufNewFile,BufRead *.h,*.m,*.mm set filetype=objc
+
 " Ruby, Rails
 autocmd BufWritePre *.rb,*.yml,*.js,*.css,*.less,*.sass,*.scss,*.html,*.xml,*.erb,*.haml call StripTrailingWhitespace()
 
