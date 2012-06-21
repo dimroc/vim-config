@@ -15,7 +15,8 @@ set guifont=Monaco:h14
 nnoremap <silent> <F3> :TagbarToggle<CR>
 nnoremap ' :TagbarToggle<CR>
 
-:command CC :CoffeeCompile
+:command CC :CoffeeCompile vert
+:command CCS :CoffeeCompile
 
 " map ctrl space to autocomplete-forward, ctrl-shift-space to autocomplete
 " backwards
