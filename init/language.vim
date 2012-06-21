@@ -20,6 +20,16 @@ autocmd BufWritePre *.rb,*.yml,*.js,*.css,*.less,*.sass,*.scss,*.html,*.xml,*.er
 " Java, PHP
 autocmd BufWritePre *.java,*.php,*.feature call StripTrailingWhitespace()
 
+" Coffeescript
+autocmd BufWritePre *.coffee call StripTrailingWhitespace()
+
+" Highlight Ruby files
+au BufRead,BufNewFile *.thor set filetype=ruby
+au BufRead,BufNewFile *.god set filetype=ruby
+au BufRead,BufNewFile Gemfile* set filetype=ruby
+au BufRead,BufNewFile Vagrantfile set filetype=ruby
+au BufRead,BufNewFile soloistrc set filetype=ruby
+
 " Highlight JSON files as javascript
 autocmd BufRead,BufNewFile *.json set filetype=javascript
 
