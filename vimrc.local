@@ -5,7 +5,8 @@ set viminfo='1000,<500,:100,/100,h,%100
 " set vimdiff to have vertical splits
 set diffopt=vertical
 
-set guifont=Monaco:h14
+set guifont=Menlo:h15
+colorscheme Tomorrow-Night
 :set hlsearch " highlight search terms
 
 " map double tap of m to GOTO bookmark, while single m remains set mark
@@ -33,3 +34,6 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*Cap
 
 " remap command e to FufBuffer
 map <D-e>       :FufBuffer<CR>
+
+" Powerline settings
+let g:Powerline_symbols = 'fancy'
