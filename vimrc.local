@@ -40,3 +40,5 @@ map <D-e>       :FufBuffer<CR>
 
 " Powerline settings
 let g:Powerline_symbols = 'fancy'
+
+set tags+=gems.tags
