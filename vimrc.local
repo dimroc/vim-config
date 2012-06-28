@@ -7,7 +7,7 @@ set diffopt=vertical
 
 set guifont=Menlo:h15
 
-colorscheme molokai
+colorscheme Tomorrow
 set bg=light
 
 :set hlsearch " highlight search terms
