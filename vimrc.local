@@ -6,7 +6,10 @@ set viminfo='1000,<500,:100,/100,h,%100
 set diffopt=vertical
 
 set guifont=Menlo:h15
-colorscheme Tomorrow-Night
+
+colorscheme molokai
+set bg=light
+
 :set hlsearch " highlight search terms
 
 " map double tap of m to GOTO bookmark, while single m remains set mark
