@@ -20,7 +20,8 @@ set wildignore+=tags               " Ignore tags when globbing.
 set wildignore+=tmp/**             " ...Also tmp files.
 set wildignore+=public/uploads/**  " ...Also uploads.
 set wildignore+=public/images/**   " ...Also images.
-set wildignore+=vendor/**          " ...Also vendor.
+set wildignore+=compiled/**          " ...Also compiled.
+" set wildignore+=vendor/**          " ...Also vendor.
 
 set list                        " Show whitespace
 if has("gui_running")
