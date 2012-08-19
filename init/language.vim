@@ -36,6 +36,10 @@ autocmd BufRead,BufNewFile *.json set filetype=javascript
 " Highlight Jasmine fixture files as HTML
 autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
 
+" Highlight GLSL files
+au BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
+autocmd BufWritePre *.frag,*.vert,*.fp,*.vp,*.glsl call StripTrailingWhitespace()
+
 " Consider question/exclamation marks to be part of a Vim word.
 autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255
 autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255
