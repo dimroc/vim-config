@@ -7,10 +7,7 @@ set diffopt=vertical
 
 set guifont=Menlo:h15
 
-colorscheme Tomorrow
-set bg=light
-
-:set hlsearch " highlight search terms
+set hlsearch " highlight search terms
 
 " map double tap of m to GOTO bookmark, while single m remains set mark
 " nmap mm `
@@ -19,26 +16,10 @@ set bg=light
 nnoremap <silent> <F3> :TagbarToggle<CR>
 nnoremap ' :TagbarToggle<CR>
 
-:command CC :CoffeeCompile vert
-:command CCS :CoffeeCompile
-
-" map ctrl space to autocomplete-forward, ctrl-shift-space to autocomplete
-" backwards
-unmap <C-Space>
-map <C-Space> <C-P>
-map <C-S-Space> <C-N>
-imap <C-Space> <C-P>
-imap <C-S-Space> <C-N>
+command CC :CoffeeCompile vert
+command CCS :CoffeeCompile
 
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
-:set nofoldenable
-
-" remap command e to FufBuffer
-map <D-e>       :FufBuffer<CR>
-
-" Powerline settings
-let g:Powerline_symbols = 'fancy'
-
-set tags+=gems.tags
+set nofoldenable
