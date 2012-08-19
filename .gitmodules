@@ -153,3 +153,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/glsl"]
+	path = bundle/glsl
+	url = git://github.com/vim-scripts/glsl.vim.git
